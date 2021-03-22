@@ -1,16 +1,18 @@
 package router
 
 import (
-    "net/http"
-    "handsongolang/pkg/hello"
-    "github.com/gorilla/mux"
+	"handsongolang/pkg/hello"
+	"net/http"
+
+	"github.com/gorilla/mux"
 )
 
-func Routers() http.Handler{
-    r := mux.NewRouter()
-        r.HandleFunc("/hello", hello.Hello)
-        r.HandleFunc("/headers", hello.Headers)
+func Routers() http.Handler {
+	r := mux.NewRouter()
+	r.HandleFunc("/hello/ok", hello.Hello)
+	r.HandleFunc("/hello/error", hello.HelloError)
+	r.HandleFunc("/headers", hello.Headers)
 
-    return r;
-//         http.Handle("/", r)
+	return r
+	//         http.Handle("/", r)
 }

@@ -1,2 +1,16 @@
 {"level":"info","@timestamp":"2021-03-22T11:43:38.333+0530","caller":"server/server.go:27","msg":"listening on :8090"}
 {"level":"info","@timestamp":"2021-03-22T11:53:23.553+0530","caller":"server/server.go:45","msg":"server shutdown successful"}
+{"level":"info","@timestamp":"2021-03-22T13:09:07.231+0530","caller":"server/server.go:27","msg":"listening on :8090"}
+{"level":"info","@timestamp":"2021-03-22T13:09:13.669+0530","caller":"server/server.go:45","msg":"server shutdown successful"}
+{"level":"info","@timestamp":"2021-03-22T13:09:29.021+0530","caller":"server/server.go:27","msg":"listening on :8090"}
+{"level":"info","@timestamp":"2021-03-22T13:09:33.223+0530","caller":"server/server.go:45","msg":"server shutdown successful"}
+{"level":"info","@timestamp":"2021-03-22T13:09:57.441+0530","caller":"server/server.go:27","msg":"listening on :8090"}
+{"level":"info","@timestamp":"2021-03-22T13:10:01.819+0530","caller":"server/server.go:45","msg":"server shutdown successful"}
+{"level":"info","@timestamp":"2021-03-22T13:10:29.546+0530","caller":"server/server.go:27","msg":"listening on :8090"}
+{"level":"info","@timestamp":"2021-03-22T13:10:31.600+0530","caller":"server/server.go:45","msg":"server shutdown successful"}
+{"level":"info","@timestamp":"2021-03-22T13:11:00.764+0530","caller":"server/server.go:27","msg":"listening on :8090"}
+{"level":"info","@timestamp":"2021-03-22T13:11:34.411+0530","caller":"server/server.go:45","msg":"server shutdown successful"}
+{"level":"info","@timestamp":"2021-03-22T13:11:37.305+0530","caller":"server/server.go:27","msg":"listening on :8090"}
+{"level":"info","@timestamp":"2021-03-22T13:11:53.198+0530","caller":"server/server.go:45","msg":"server shutdown successful"}
+{"level":"info","@timestamp":"2021-03-22T13:12:36.137+0530","caller":"server/server.go:27","msg":"listening on :8090"}
+{"level":"info","@timestamp":"2021-03-22T13:15:47.304+0530","caller":"server/server.go:45","msg":"server shutdown successful"}
