@@ -14,6 +14,8 @@ type Config struct {
 	httpServerConfig HTTPServerConfig
 	logConfig        LogConfig
 	logFileConfig    LogFileConfig
+	dbConfig         DBConfig
+
 }
 
 func (config Config) GetLogConfig() LogConfig {
@@ -26,6 +28,10 @@ func (config Config) GetLogFileConfig() LogFileConfig {
 
 func (config Config) GetHTTPServerConfig() HTTPServerConfig {
 	return config.httpServerConfig
+}
+
+func (config Config) GetDBConfig() DBConfig {
+	return config.dbConfig
 }
 
 func NewConfig(configFile string) Config {
@@ -42,5 +48,7 @@ func NewConfig(configFile string) Config {
 		httpServerConfig: newHTTPServerConfig(),
 		logConfig:        newLogConfig(),
 		logFileConfig:    newLogFileConfig(),
+		dbConfig:         NewDBConfig(),
+
 	}
 }
