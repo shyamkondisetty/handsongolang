@@ -1,0 +1,2 @@
+{"level":"info","@timestamp":"2021-03-22T11:43:38.333+0530","caller":"server/server.go:27","msg":"listening on :8090"}
+{"level":"info","@timestamp":"2021-03-22T11:53:23.553+0530","caller":"server/server.go:45","msg":"server shutdown successful"}

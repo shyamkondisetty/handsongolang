@@ -12,10 +12,19 @@ import (
 
 type Config struct {
 	httpServerConfig HTTPServerConfig
+	logConfig        LogConfig
+	logFileConfig    LogFileConfig
+}
+
+func (config Config) GetLogConfig() LogConfig {
+	return config.logConfig
+}
+
+func (config Config) GetLogFileConfig() LogFileConfig {
+	return config.logFileConfig
 }
 
 func (config Config) GetHTTPServerConfig() HTTPServerConfig {
-    log.Print("GetHTTPServerConfig", config)
 	return config.httpServerConfig
 }
 
@@ -31,5 +40,7 @@ func NewConfig(configFile string) Config {
 
 	return Config{
 		httpServerConfig: newHTTPServerConfig(),
+		logConfig:        newLogConfig(),
+		logFileConfig:    newLogFileConfig(),
 	}
 }
