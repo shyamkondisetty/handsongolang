@@ -11,7 +11,7 @@ import (
 )
 
 type UserRepository interface {
-	AddUser(user *User) error
+	AddUser(ctx context.Context,user *User) error
 }
 
 type gormUserRepository struct {
@@ -27,14 +27,10 @@ func (ur *gormUserRepository) AddUser(ctx context.Context, user *User) error {
 		return db.Error
 	}
 
-	// if db.RowsAffected == 0 {
-	// 	return liberror.Builder().SetOperation("CreateBankInfo.db.Create").SetKind(liberror.ResourceConflictError).SetCause(errors.New("duplicate record")).Build()
-	// }
-
 	return nil
 }
 
 
-func NewUserRepository(db *gorm.DB) *gormUserRepository {
+func NewUserRepository(db *gorm.DB) UserRepository {
 	return &gormUserRepository{db: db}
 }

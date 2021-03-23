@@ -5,11 +5,12 @@ import (
 	"net/http"
 	"github.com/gorilla/mux"
     "handsongolang/pkg/user"
+    "handsongolang/pkg/handlers"
 )
 
-func Routers() http.Handler {
+func Routers(userService user.Service) http.Handler {
 	r := mux.NewRouter()
-    uh := user.NewUserHandler()
+    uh := handlers.NewUserHandler(userService)
 
 	r.HandleFunc("/hello/ok", hello.Hello)
 	r.HandleFunc("/hello/error", hello.HelloError)
